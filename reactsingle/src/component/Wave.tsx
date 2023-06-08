@@ -15,7 +15,9 @@ of Simple CSS Waves--> */}
         <div>
         <h1>Free Template for building a SaaS app using Material-ui</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-        <button>DOWNLOAD FROM GITHUB</button>
+        <div className='centerus'>
+        <button className="custom-btn btn-2">DOWNLOAD FROM GITHUB</button>
+        </div>
         </div>
         <div className='imageducont'>
         <img  src="https://www.katiejolly.io/why-you-should-use-git/images/home-screen.JPG" alt='' />
