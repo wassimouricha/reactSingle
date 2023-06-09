@@ -36,6 +36,15 @@
   grid-template-columns: repeat(auto-fit, 550px);
   justify-content: center;
 }
+.card-contained {
+  padding-left: 100px;
+  margin: 20px;
+  align-items: start;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(auto-fit, 375px);
+  justify-content: center;
+}
 
 
 @keyframes App-logo-spin {

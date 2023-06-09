@@ -12,7 +12,6 @@ const Features : React.FC<cardType> = ({cardType}) => {
     <section className="card-container">
 
     <div className="card">
-      <i className="fas fa-paint-brush"></i>
       <div className='minilogo'>
         <img src={cardType.image} alt="" />
       </div>

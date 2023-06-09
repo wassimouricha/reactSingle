@@ -5,6 +5,9 @@ import Wave from './component/Wave';
 import Features from './component/Features';
 import Cartes from './models/Cartes';
 import Pricing from './component/Pricing';
+import Prices from './models/Prices';
+import TitlePricing from './component/TitlePricing';
+import Footer from './component/Footer';
 
 
 
@@ -47,6 +50,29 @@ function App() {
       image: 'https://img.icons8.com/?size=512&id=o0NhVAeU37Sz&format=png'
     },
   ]
+
+  const priceData : Prices[] = [
+    {
+      id: 1,
+      prix: '14.99',
+      titre: 'Starter'
+    },
+    {
+      id: 2,
+      prix: '29.99',
+      titre: 'Premium'
+    },
+    {
+      id: 3,
+      prix: '49.99',
+      titre: 'Business'
+    },
+    {
+      id: 4,
+      prix: '99.99',
+      titre: 'Tycoon'
+    },
+  ]
   return (
     <div className="App">
     <Navbar />
@@ -54,8 +80,11 @@ function App() {
     <div className='card-container'>
     {cardData.map((cardData) => { return <Features key={cardData.id}  cardType={cardData }/> })}
     </div>
-    <Pricing  />
-
+    <TitlePricing />
+    <div className='card-contained'>
+    {priceData.map((priceData) => { return <Pricing key={priceData.id}   priceType={priceData}/> })}
+    </div>
+    <Footer />
     </div>
   );
 }
